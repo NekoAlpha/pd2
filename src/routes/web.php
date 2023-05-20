@@ -14,3 +14,8 @@ use App\Http\Controllers\DirectorController;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/directors', [DirectorController::class, 'list']);
+Route::get('/directors/create', [DirectorController::class, 'create']);
+Route::post('/directors/put', [DirectorController::class, 'put']);
+Route::get('/directors/update/{director}', [DirectorController::class, 'update']);
+Route::post('/directors/patch/{director}', [DirectorController::class, 'patch']);
+Route::post('/directors/delete/{director}', [DirectorController::class, 'delete']);
