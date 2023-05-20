@@ -19,7 +19,7 @@
                     <td>{{ $director->id }}</td>
                     <td>{{ $director->name }}</td>
                     <td>
-                        <a href="/directors/update/{{ $director->id }}" type="submit" class="btn btn-primary">Labot</a> 
+                        <a href="/directors/update/{{ $director->id }}" class="btn btn-primary">Labot</a> 
                         /
                         <form method="post" action="/directors/delete/{{ $director->id }}" class="deletion-form d-inline">
                             @csrf
