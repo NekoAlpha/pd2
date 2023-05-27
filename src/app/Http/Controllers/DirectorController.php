@@ -7,6 +7,11 @@ use App\Models\Director;
 
 class DirectorController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     //Display all directors
     public function list()
     {
