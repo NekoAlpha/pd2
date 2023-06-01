@@ -35,8 +35,21 @@
                     @if(Auth::check())
 
                     <li class="nav-item">
+                        <a class="nav-link" href="/movies">Filmas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tv_shows">TV Šovi</a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="/directors">Režisori</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/genres">Žanri</a>
+                    </li>
+
 
                     <li class="nav-item">
                         <a class="nav-link" href="/logout">Beigt darbu</a>

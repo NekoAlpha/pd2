@@ -41,12 +41,12 @@ class DirectorController extends Controller
     //Save new director
     public function put(Request $request)
     {
-        $validatedDate = $request->validate([
+        $validatedData = $request->validate([
             'name' => 'required',
         ]);
 
         $director = new Director();
-        $director->name = $validatedDate['name'];
+        $director->name = $validatedData['name'];
         $director->save();
 
         return redirect('/directors');
@@ -67,11 +67,11 @@ class DirectorController extends Controller
     //Update existing objects
     public function patch(Director $director, Request $request)
     {
-        $validatedDate = $request->validate([
+        $validatedData = $request->validate([
             'name' => 'required',
         ]);
 
-        $director->name = $validatedDate['name'];
+        $director->name = $validatedData['name'];
         $director->save();
 
         return redirect('/directors');
